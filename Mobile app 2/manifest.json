@@ -4,25 +4,25 @@
   "short_name": "Museum",
   "description": "Create your own canvas",
   "lang": "en-US",
-  "start_url": "/welcome.html",
+  "start_url": "/index.html",
   "scope": ".",
   "display": "standalone",
   "theme_color": "#404040",
   "icons": [
     {
-      "src": "icon_48.png",
+      "src": "../Image/icon_48.png",
       "sizes": "48x48"
     },
     {
-      "src": "icon_128.png",
+      "src": "../Image/icon_128.png",
       "sizes": "128x128"
     },
     {
-      "src": "icon_192.png",
+      "src": "../Image/icon_192.png",
       "sizes": "192x192"
     },
     {
-      "src": "icon_512.png",
+      "src": "../Image/icon_512.png",
       "sizes": "512x512"
     }
   ]
