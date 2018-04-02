@@ -37,18 +37,23 @@
 
 
 	<body>
-		<div class="bg upper"></div>
-		<div class="bg lower"></div>
+		<div class="bg upper" id="full"></div>
+		
 
-		<h1>LOGIN</h1>
+		<h1>BE TIM</h1>
+		<h2 class="white">WELCOME</h2>
 		<div class="profile"></div>
 		
-		<form>
-			<input type="email" name="email" placeholder="   E-mail">
-			<input type="password" name="password" placeholder="   Password">
-
-			<input type="submit" value="Register" class="left" formaction="Page/register.html">
-			<input type="submit" value="Login" class="right" formaction="Page/home.html">
-		</form>
+		
+		
+		 <script>
+           	 	$(document).ready(function(){
+                		setTimeout(function(){
+                 			window.location = "Page/welcome.html";
+                		}, 3000);
+               		});
+        	</script>
+		
+		
 	</body>
 </html>
