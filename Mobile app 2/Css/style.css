@@ -1,0 +1,241 @@
+/* ..................................Algemeen.................................. */
+
+*
+{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+@font-face
+{
+	font-family:big;
+	src:url("../Font/Quicksand-Bold.otf");
+}
+@font-face
+{
+	font-family:light;
+	src:url("../Font/Quicksand-Light.otf");
+}
+
+.bg
+{
+	display:block;
+	width: 100vw;
+	height: 50vh;
+	position:fixed;
+	z-index:-1;
+}
+	.upper
+	{
+		background-color:#005d7c;
+		top:0px;
+	}
+	.lower
+	{
+		background:white;
+		bottom:0px;
+	}
+
+.profile
+{
+	background-color:#ffffff;
+	border-radius: 100%;
+	border: 20px solid white;
+	width:50vw;
+	height: 50vw;
+	margin:0px auto;
+	margin-top:12%;
+	box-shadow: 1px 10px lightgray;
+}
+
+
+h1
+{
+	display:block;
+	font-family: big;
+	
+	font-size: 6em;
+	text-align:center;
+	color:white;
+	margin-top:12%;
+}
+h2
+{
+	display:block;
+	font-family: light;
+	
+	font-size: 3em;
+	text-align:center;
+	margin-top:7%;
+}
+h3
+{
+	display:block;
+	text-align:center;
+	font-size: 2em;
+	font-family: light;
+	color:white;
+	line-height: 4vh;
+	vertical-align: middle;
+}
+
+.setting{
+	display:block;
+	position: absolute;
+	right:0vw;
+	top:0vw;
+	width:10vw;
+	height:10vw;
+	background-image:url("../Image/head.svg");
+	background-size: 100%;
+}
+
+a.toSetting
+{
+	display:block;
+	position: absolute;
+	right:3vw;
+	top:3vw;
+	width:10vw;
+	height:10vw;
+	z-index: 1;
+}
+label >div
+{
+	background-image:url("../Image/cog.svg");
+	background-size:90%;
+	background-repeat: no-repeat; 
+	width:7vw;
+	height:7vw;
+	float:right;
+	margin-top:-27%;
+	position:relative;
+	z-index: 1;	
+}
+/* ..................................Index pagina.................................. */
+
+
+form
+{
+	width:60vw;
+	height: 20vh;
+	background-color:white;	
+	margin:0px auto;
+	margin-top:8%;
+}
+input[type=email],input[type=password],input[type=text]
+{
+	width:100%;
+	height:30%;
+	font-size:3em;
+	margin-bottom: 5vh;
+	border-bottom:4px solid #cdcdcd;
+}
+
+input[type=email]:focus,input[type=password]:focus,input[type=text]:focus
+{
+	border-bottom:4px solid #005d7c;
+	color:#005d7c;
+}
+
+input[type=email]::placeholder,input[type=password]::placeholder,input[type=text]::placeholder
+{
+	color:#cdcdcd;
+
+}
+input[type=password]:focus::placeholder,input[type=text]:focus::placeholder,input[type=email]:focus::placeholder
+{
+	color:#005d7c;
+}
+input[type=submit]
+{
+	width:55%;
+	height:35%;
+	border-radius:25px;
+	font-size:3em;
+	border: 10px solid white;
+	color:white;
+	box-shadow: 1px 10px lightgray
+}
+
+.left
+{
+	margin-left:-7vw;
+	float:left;
+	background-color: #b2b2b2;
+}
+.right
+{
+	margin-right:-7vw;
+	float:right;
+	background-color: #005d7c;
+}
+
+
+/* ..................................Home Pagina.................................. */
+/* ..................................WELCOME pagina.................................. */
+/* ..................................Register.................................. */
+
+.mid
+{
+	height:50% !important;
+	margin-left:25%;
+	background-color: #005d7c;
+
+}
+
+section
+{
+	background-color: #ccd8e3;
+	display:block;
+	width:70vw;
+	height:30vh;
+	margin:0 auto;
+	margin-top:3vh;
+	position: relative;
+
+}
+section > a > div
+{
+	width:90%;
+	height:4vh;
+	background-color:#005d7c;
+	margin: 0 auto;
+	position:absolute;
+	bottom:3%;
+	left:5%;
+	border-radius: 10px;
+	
+}
+.blue
+{
+	color:#005d7c;
+}
+
+
+#full
+{
+	height:100vh;
+}
+.white
+{
+	color:white;
+}
+#sForm
+{
+	height:12vh;
+}
+h4
+{
+	display:block;
+	text-align:center;
+	font-size: 3em;
+	font-family: light;
+	color:#d5abbd;
+	line-height: 4vh;
+	vertical-align: bottom;
+	margin-top: 25vh;
+
+}
+
+
