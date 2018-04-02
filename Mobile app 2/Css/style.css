@@ -5,6 +5,8 @@
 	margin:0px;
 	border:0px;
 }
+
+
 @font-face
 {
 	font-family:big;
@@ -50,29 +52,34 @@
 
 h1
 {
+	/*algemene css*/
 	display:block;
 	font-family: big;
-	
 	font-size: 6em;
 	text-align:center;
+	/*specifieke css*/
 	color:white;
 	margin-top:12%;
 }
 h2
 {
+	/*algemene css*/
 	display:block;
 	font-family: light;
-	
 	font-size: 3em;
 	text-align:center;
+	/*Specifieke css*/
 	margin-top:7%;
 }
+
 h3
 {
+	/*Alegemene Css*/
 	display:block;
 	text-align:center;
 	font-size: 2em;
 	font-family: light;
+	/*Specifieke Css*/
 	color:white;
 	line-height: 4vh;
 	vertical-align: middle;
@@ -99,28 +106,44 @@ a.toSetting
 	height:10vw;
 	z-index: 1;
 }
-label >div
-{
-	background-image:url("../Image/cog.svg");
-	background-size:90%;
-	background-repeat: no-repeat; 
-	width:7vw;
-	height:7vw;
-	float:right;
-	margin-top:-27%;
-	position:relative;
-	z-index: 1;	
-}
-/* ..................................Index pagina.................................. */
+
 
 form
 {
+	/*algemeen*/
 	width:60vw;
 	height: 20vh;
 	background-color:white;	
 	margin:0px auto;
+	/*specifiek*/
 	margin-top:8%;
 }
+
+section > a > div
+{
+	/*Algemeen*/
+	width:90%;
+	height:4vh;
+	background-color:#005d7c;
+	margin: 0 auto;
+	position:absolute;
+	bottom:3%;
+	left:5%;
+	border-radius: 10px;
+	
+}
+
+
+/* ..................................Welcome pagina.................................. */
+
+#full
+{
+	height:100vh;
+}
+
+/* ..................................Index pagina.................................. */
+
+
 input[type=email],input[type=password],input[type=text]
 {
 	width:100%;
@@ -171,11 +194,39 @@ input[type=submit]
 
 
 /* ..................................Home Pagina.................................. */
-/* ..................................WELCOME pagina.................................. */
+section.homeDiv
+{	
+	/*Algemeen*/
+	background-color: #ccd8e3;
+	display:block;
+	width:70vw;
+	margin:0 auto;
+
+	/*Specifiek*/
+	height:30vh;
+	margin-top:3vh;
+	position: relative;
+
+}
+
+
 /* ..................................Register.................................. */
-/* ..................................Register.................................. */
-/* ..................................Register.................................. */
-/* ..................................Register.................................. */
+
+/* ..................................Account.................................. */
+label > div
+{
+	background-image:url("../Image/cog.svg");
+	background-size:90%;
+	background-repeat: no-repeat; 
+	width:7vw;
+	height:7vw;
+	float:right;
+	margin-top:-27%;
+	position:relative;
+	z-index: 1;	
+}
+/* ..................................Inspired.................................. */
+/* ..................................Trending.................................. */
 /* ..................................Register.................................. */
 /* ..................................Register.................................. */
 /* ..................................Register.................................. */
@@ -188,39 +239,15 @@ input[type=submit]
 
 }
 
-section
-{
-	background-color: #ccd8e3;
-	display:block;
-	width:70vw;
-	height:30vh;
-	margin:0 auto;
-	margin-top:3vh;
-	position: relative;
 
-}
-section > a > div
-{
-	width:90%;
-	height:4vh;
-	background-color:#005d7c;
-	margin: 0 auto;
-	position:absolute;
-	bottom:3%;
-	left:5%;
-	border-radius: 10px;
-	
-}
+
 .blue
 {
 	color:#005d7c;
 }
 
 
-#full
-{
-	height:100vh;
-}
+
 .white
 {
 	color:white;
