@@ -238,4 +238,19 @@ h4
 
 }
 
+section.trending
+{
+	display:block;
+	width:70vw;
+	background-color:white;
+	margin:0px auto;
+}
+.trending > div
+{
+	width:100%;
+	height:80%;
+	background-color: #005d7c;
+	margin-top: 5vh;
+}
+
 
