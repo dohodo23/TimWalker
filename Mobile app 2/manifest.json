@@ -10,19 +10,19 @@
   "theme_color": "#404040",
   "icons": [
     {
-      "src": "../Images/icon_48.svg",
+      "src": "../Image/icon_48.svg",
       "sizes": "48x48"
     },
     {
-      "src": "../Images/icon_128.svg",
+      "src": "../Image/icon_128.svg",
       "sizes": "128x128"
     },
     {
-      "src": "../Images/icon_192.svg",
+      "src": "../Image/icon_192.svg",
       "sizes": "192x192"
     },
     {
-      "src": "../Images/icon_512.svg",
+      "src": "../Image/icon_512.svg",
       "sizes": "512x512"
     }
   ]
