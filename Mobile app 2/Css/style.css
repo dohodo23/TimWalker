@@ -1,11 +1,12 @@
 /* ..................................Algemeen.................................. */
-
 *
 {
 	padding:0px;
 	margin:0px;
 	border:0px;
 }
+
+
 @font-face
 {
 	font-family:big;
@@ -51,29 +52,34 @@
 
 h1
 {
+	/*algemene css*/
 	display:block;
 	font-family: big;
-	
 	font-size: 6em;
 	text-align:center;
+	/*specifieke css*/
 	color:white;
 	margin-top:12%;
 }
 h2
 {
+	/*algemene css*/
 	display:block;
 	font-family: light;
-	
 	font-size: 3em;
 	text-align:center;
+	/*Specifieke css*/
 	margin-top:7%;
 }
+
 h3
 {
+	/*Alegemene Css*/
 	display:block;
 	text-align:center;
 	font-size: 2em;
 	font-family: light;
+	/*Specifieke Css*/
 	color:white;
 	line-height: 4vh;
 	vertical-align: middle;
@@ -100,29 +106,44 @@ a.toSetting
 	height:10vw;
 	z-index: 1;
 }
-label >div
-{
-	background-image:url("../Image/cog.svg");
-	background-size:90%;
-	background-repeat: no-repeat; 
-	width:7vw;
-	height:7vw;
-	float:right;
-	margin-top:-27%;
-	position:relative;
-	z-index: 1;	
-}
-/* ..................................Index pagina.................................. */
 
 
 form
 {
+	/*algemeen*/
 	width:60vw;
 	height: 20vh;
 	background-color:white;	
 	margin:0px auto;
+	/*specifiek*/
 	margin-top:8%;
 }
+
+section > a > div
+{
+	/*Algemeen*/
+	width:90%;
+	height:4vh;
+	background-color:#005d7c;
+	margin: 0 auto;
+	position:absolute;
+	bottom:3%;
+	left:5%;
+	border-radius: 10px;
+	
+}
+
+
+/* ..................................Welcome pagina.................................. */
+
+#full
+{
+	height:100vh;
+}
+
+/* ..................................Index pagina.................................. */
+
+
 input[type=email],input[type=password],input[type=text]
 {
 	width:100%;
@@ -173,7 +194,250 @@ input[type=submit]
 
 
 /* ..................................Home Pagina.................................. */
-/* ..................................WELCOME pagina.................................. */
+section.homeDiv
+{	
+	/*Algemeen*/
+	background-color: #ccd8e3;
+	display:block;
+	width:70vw;
+	margin:0 auto;
+
+	/*Specifiek*/
+	height:30vh;
+	margin-top:3vh;
+	position: relative;
+
+}
+
+
+/* ..................................Register.................................. */
+
+/* ..................................Account.................................. */
+label > div
+{
+	background-image:url("../Image/cog.svg");
+	background-size:90%;
+	background-repeat: no-repeat; 
+	width:7vw;
+	height:7vw;
+	float:right;
+	margin-top:-27%;
+	position:relative;
+	z-index: 1;	
+}
+/* ..................................Inspired.................................. */
+
+/* ..................................Trending.................................. */
+
+/* ..................................Create.................................... */
+
+#create .setting{ 
+    right: 0;
+    left: 80vw;
+    top: 2vh;
+    float: right;
+    background-color: white;
+}
+
+#create .backbtn{
+    top: 2vh;
+	width:10vw;
+	height:10vw;
+    background-color: white;
+	background-image:url("../Image/reply.svg");
+	background-size: 100%;
+}
+
+#create .blue{
+    margin-bottom: 4vh;
+}
+
+#create{
+    position: absolute;
+}
+
+#dropfield{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.droppable{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.draggable{
+    height: 6vh;
+    width: 14vw;
+    position: relative;
+    display: inline-block;
+    margin: 1vw;
+    float: left;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.backblue{
+    background-color: blue;
+    float: left;
+}
+
+.green{
+    background-color: green;
+    float: left;
+}
+
+#imgcontainer{
+    height: 10vh;
+    width: 88vw;
+    background-color: #f1f1f1;
+    float: left;
+    overflow-x: scroll;
+    padding-left: 2vw;
+    padding-right: 10vw;
+    overflow: -moz-scrollbars-vertical; 
+}
+
+#imgcontainer ::-webkit-scrollbar {
+    width: 10px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.gedropt{
+    height: 20vh;
+    width: 40vw;
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.appel.ui-draggable.ui-draggable-handle{
+    height: 5vh;
+    width: 10vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.boom.ui-draggable.ui-draggable-handle{
+    height: 10vh;
+    width: 20vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.kasteel.ui-draggable.ui-draggable-handle{
+    height: 25vh;
+    width: 50vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.meer.ui-draggable.ui-draggable-handle{
+    height: 15vh;
+    width: 30vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.mes.ui-draggable.ui-draggable-handle{
+    height: 5vh;
+    width: 10vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.oor.ui-draggable.ui-draggable-handle{
+    height: 5vh;
+    width: 10vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.persoon.ui-draggable.ui-draggable-handle{
+    height: 15vh;
+    width: 30vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.rkasteel.ui-draggable.ui-draggable-handle{
+    height: 30vh;
+    width: 60vw; 
+}
+
+#dropfield .droppable.ui-widget-header .draggable.ui-widget-content.slang.ui-draggable.ui-draggable-handle{
+    height: 10vh;
+    width: 20vw; 
+}
+
+#createform{
+    margin: 0;
+    padding: 0;
+}
+
+#createform ::placeholder{
+    color: #005d7c;
+}
+
+#addtitle{
+    width: 80vw;
+    height: 6vh;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    float: left;
+    border-bottom: 1px solid #005d7c;
+    text-align: center;
+}
+
+#savedevice{
+    margin-top: 4vh;
+    float: left;
+    display: block;
+    width: 50vw;
+    height: 10vh;
+}
+
+#savedevice img{
+    margin-left: 19vw;
+    width: 12vw;
+    height: 7vh;
+    transform: rotate(180deg);
+}
+
+#savedevice p{
+    font-family: light;
+    font-size: 30pt;
+    text-align: center;
+    color: #005d7c;
+}
+
+#resetcreation{
+    margin-top: 4vh;
+    float: left;
+    display: block;
+    width: 50vw;
+    height: 10vh;
+}
+
+#resetcreation p{
+    font-family: light;
+    font-size: 30pt;
+    text-align: center;
+    color: #005d7c;
+}
+
+#resetcreation img{
+    margin-left: 19vw;
+    width: 12vw;
+    height: 7vh;
+    transform: rotate(180deg);
+}
+
+#submitbtn{
+    background-color: #005d7c;
+    float: left;
+    margin-left: 55%;
+    margin-bottom: 4vh;
+}
+
+
+
+
+
+/* ..................................Register.................................. */
 /* ..................................Register.................................. */
 
 .mid
@@ -184,39 +448,15 @@ input[type=submit]
 
 }
 
-section
-{
-	background-color: #ccd8e3;
-	display:block;
-	width:70vw;
-	height:30vh;
-	margin:0 auto;
-	margin-top:3vh;
-	position: relative;
 
-}
-section > a > div
-{
-	width:90%;
-	height:4vh;
-	background-color:#005d7c;
-	margin: 0 auto;
-	position:absolute;
-	bottom:3%;
-	left:5%;
-	border-radius: 10px;
-	
-}
+
 .blue
 {
 	color:#005d7c;
 }
 
 
-#full
-{
-	height:100vh;
-}
+
 .white
 {
 	color:white;
@@ -238,4 +478,17 @@ h4
 
 }
 
-
+section.trending
+{
+	display:block;
+	width:70vw;
+	background-color:white;
+	margin:0px auto;
+}
+.trending > div
+{
+	width:100%;
+	height:80%;
+	background-color: #005d7c;
+	margin-top: 5vh;
+}

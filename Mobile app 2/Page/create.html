@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+<!-- ........................................Standaard code........................................... -->
+
+		<link rel="manifest" href="manifest.json">
+
+		<meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Museum">
+        <meta name="apple-mobile-web-app-title" content="Museum">
+        <meta name="theme-color" content="#404040">
+        <meta name="msapplication-navbutton-color" content="#404040">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="index.html">
+
+        <link rel="icon" sizes="48x48" href="icon_48">
+        <link rel="apple-touch-icon" sizes="48x48" href="Image/icon_48.svg">
+        <link rel="icon" sizes="128x128" href="icon_128">
+        <link rel="apple-touch-icon" sizes="128x128" href="Image/icon_128.svg">
+        <link rel="icon" sizes="192x192" href="icon_192">
+        <link rel="apple-touch-icon" sizes="192x192" href="Image/icon_192.svg">
+        <link rel="icon" sizes="512x512" href="icon_512">
+        <link rel="apple-touch-icon" sizes="512x512" href="Image/icon_512.svg">
+
+<!-- ........................................Eigen code........................................... -->
+
+        <link rel="stylesheet" type="text/css" href="../Css/style.css">
+
+       	<script src="../JavaScript/jquery-3.3.1.min.js"></script>
+		<script src="../JavaScript/jquery.mobile-1.4.5.min.js"></script>
+        <script src="../JavaScript/sw.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../Javascript/jquery.ui.touch-punch.min.js"></script>
+        
+        
+        
+        <script>
+
+            $( function() {        
+                
+                $( ".draggable" ).draggable({
+                    helper: "clone",
+                    revert: false,
+                });
+                
+                $( ".droppable" ).droppable({
+                    
+                    drop: function( event, ui ) {
+                        ui.draggable.clone().appendTo(this);
+                    }
+                 });
+                
+                $(".button").on("click", function() {
+                        $(".droppable .draggable").remove();
+                });
+            });
+            
+        </script>
+        
+        
+        
+	</head>
+
+
+
+	<body>
+        <section id="create">
+            <a href="#"><div class="backbtn"></div></a>
+            <a href="account.html"><div class="setting"></div></a>
+            <h1 class="blue">BE TIM</h1>
+            <h2 class="blue">CREATE YOUR VISUALISATION</h2>
+            <div id="createfield">
+                <div id="dropfield">
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+                    <div class="backblue droppable ui-widget-header"></div>
+
+
+
+
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+                    <div class="green droppable ui-widget-header"></div>
+
+                </div>
+
+
+                <div id="imgcontainer">
+                    <div class="draggable ui-widget-content appel"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content boom"><img src="../Image/boom_128.svg"></div>
+                    <div class="draggable ui-widget-content kasteel"><img src="../Image/kasteel_128.svg"></div>
+                    <div class="draggable ui-widget-content meer"><img src="../Image/meer_128.svg"></div>
+                    <div class="draggable ui-widget-content mes"><img src="../Image/mes_128.svg"></div>
+                    <div class="draggable ui-widget-content oor"><img src="../Image/oor_128.svg"></div>
+                    <div class="draggable ui-widget-content persoon"><img src="../Image/persoon_128.svg"></div>
+                    <div class="draggable ui-widget-content rkasteel"><img src="../Image/rkasteel_128.svg"></div>
+                    <div class="draggable ui-widget-content slang"><img src="../Image/slang_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                    <div class="draggable ui-widget-content"><img src="../Image/appel_128.svg"></div>
+                </div>
+
+            
+            
+            </div>
+            <div id="savedevice"><a href="#"><img src="../Image/air-play.svg"></a><p>Save on device</p></div>
+            <div id="resetcreation" class="button" ><img src="../Image/rotate.jpeg"><p>Reset my creation</p></div>
+            <form id="createform">
+                <input id="addtitle" type="text" placeholder="Add title">
+                <input id="submitbtn" type="submit" value="Create">
+            </form>
+            
+        
+        
+        
+        </section>
+	</body>
+</html>
