@@ -5,7 +5,7 @@
 
 <!-- ........................................Standaard code........................................... -->
 
-		<link rel="manifest" href="../manifest.json">
+		<link rel="manifest" href="manifest.json">
 
 		<meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,31 +29,61 @@
 
         <link rel="stylesheet" type="text/css" href="../Css/style.css">
 
-       	<script src="../JavaScript/jquery-3.3.1.min.js"></script>
-		<script src="../JavaScript/jquery.mobile-1.4.5.min.js"></script>
-		<script src="../JavaScript/cameraScript.js"></script>
-        <script src="../JavaScript/sw.js"></script>
+       	<script src="JavaScript/jquery-3.3.1.min.js"></script>
+		<script src="JavaScript/jquery.mobile-1.4.5.min.js"></script>
+        <script src="JavaScript/sw.js"></script>
+        
 	</head>
 
 
-	<div class="back"> <a href="welcome.html"></a></div>
+
 	<body>
 		<div class="bg upper"></div>
 		<div class="bg lower"></div>
-
-		<h1>REGISTER</h1>
-		<div class="profile">
-			<h4 id="selfieBtn">Edit</h2>
-		</div>
 		
-		<form id="sForm">
-
-			<input type="text" name="name" placeholder="   Name">
+		<div class="back"> <a href="home.html"></a></div>
+			<a href="account.html" class="toSetting">
+				<div class="setting gear"></div>
+			</a>
+		
+		<h1>ACCOUNT</h1>
+		<div class="profile"></div>
+		
+		<form>
+			<input type="text" name="name" placeholder="   Name" >
+			
 			<input type="email" name="email" placeholder="   E-mail">
-			<input type="password" name="password" placeholder="   Password">
-			
-			
-			<input type="submit" value="Register" class="mid" formaction="home.html">
 		</form>
+		<h2>OWN CREATION & FOVORITE</h2>
+
+		<section class="creationAcc">
+			<div class="imageAcc"></div>
+			<div class="textAcc">
+				<h2>Name creator - Titel</h2>
+
+				<p>Gemaakt op 09 jaunarie 2018.
+				10.592<span></span></p>
+			</div>
+		</section>
+
+		<section class="creationAcc">
+			<div class="imageAcc"></div>
+			<div class="textAcc">
+				<h2>Name creator - Titel</h2>
+
+				<p>Gemaakt op 09 jaunarie 2018.
+				10.592<span></span></p>
+			</div>
+		</section>
+
+		<section class="creationAcc">
+			<div class="imageAcc"></div>
+			<div class="textAcc">
+				<h2>Name creator - Titel</h2>
+
+				<p>Gemaakt op 09 jaunarie 2018.
+				10.592<span></span></p>
+			</div>
+		</section>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-/* ..................................Algemeen.................................. */
+ /* ..................................Algemeen.................................. */
 *
 {
 	padding:0px;
@@ -23,7 +23,7 @@
 	display:block;
 	width: 100vw;
 	height: 50vh;
-	position:fixed;
+	position:absolute;
 	z-index:-1;
 }
 	.upper
@@ -46,7 +46,7 @@
 	height: 50vw;
 	margin:0px auto;
 	margin-top:12%;
-	box-shadow: 1px 10px lightgray;
+	box-shadow: 1px 10px lightgray;§
 }
 
 
@@ -92,16 +92,18 @@ h3
 	top:0vw;
 	width:10vw;
 	height:10vw;
+	z-index: 2;
 	background-image:url("../Image/head.svg");
-	background-size: 100%;
+	background-size: 80%;
+	background-repeat: no-repeat;
 }
 
 a.toSetting
 {
 	display:block;
 	position: absolute;
-	right:3vw;
-	top:3vw;
+	right:5vw;
+	top:5vw;
 	width:10vw;
 	height:10vw;
 	z-index: 1;
@@ -132,7 +134,25 @@ section > a > div
 	border-radius: 10px;
 	
 }
+.back
+{
+	display: block;
+	width:10vw;
+	height:10vw;
 
+	position:absolute;
+	left:5vw;
+	top:5vw;
+	background-image: url("../Image/reply.svg");
+	background-size:80%;
+	background-repeat: no-repeat;
+}
+.back > a
+{	
+	display: block;
+	width:100%;
+	height:100%;
+}
 
 /* ..................................Welcome pagina.................................. */
 
@@ -146,11 +166,13 @@ section > a > div
 
 input[type=email],input[type=password],input[type=text]
 {
+	/*alegemeen*/
 	width:100%;
+	border-bottom:4px solid #cdcdcd;
+	/*Specifiek*/
 	height:30%;
 	font-size:3em;
 	margin-bottom: 5vh;
-	border-bottom:4px solid #cdcdcd;
 }
 
 input[type=email]:focus,input[type=password]:focus,input[type=text]:focus
@@ -170,13 +192,15 @@ input[type=password]:focus::placeholder,input[type=text]:focus::placeholder,inpu
 }
 input[type=submit]
 {
-	width:55%;
-	height:35%;
+	/*algemeen*/
 	border-radius:25px;
 	font-size:3em;
 	border: 10px solid white;
 	color:white;
-	box-shadow: 1px 10px lightgray
+	box-shadow: 1px 10px lightgray;
+	/*specifiek*/
+	width:55%;
+	height:35%;
 }
 
 .left
@@ -225,9 +249,125 @@ label > div
 	position:relative;
 	z-index: 1;	
 }
-/* ..................................Inspired.................................. */
 
+
+/* ..................................Inspired.................................. */
 /* ..................................Trending.................................. */
+/* ..................................Register.................................. */
+/* ..................................Main account.................................. */
+.gear
+{
+	background-image: url("../Image/cogWhite.svg");
+}
+.creationAcc
+{
+	display:block;
+	width:90vw;
+	height:15vh;
+	background-color:red;
+	margin:5vh auto;
+}
+
+.creationAcc .imageAcc{
+	float:left;
+	background-color:blue;
+	width:40%;
+	height:100%;
+}
+.textAcc
+{
+	display:block;
+	width:55%;
+	height:100%;
+	float:right;
+}
+.creationAcc > div > h2
+{
+	
+	display:block;
+	width:100%;
+	font-size:2.5em;
+	color: blue;
+	border-bottom: 5px solid blue;
+	margin-top:0px;
+	text-align:left;	
+}
+
+p
+{
+	font-family: light;
+	text-align: left;
+	font-size: 2.2em;
+	color:white;
+	margin-top: 2%;
+}
+span
+{
+	display: inline-block;
+	width:4vw;
+	height:4vw;
+	background-image: url("../Image/heart.svg");
+	background-size: 100%;
+	margin-left:3%;
+
+
+}
+/* ..................................Register.................................. */
+
+.mid
+{
+	height:50% !important;
+	margin-left:25%;
+	background-color: #005d7c;
+
+}
+
+.blue
+{
+	color:#005d7c;
+}
+
+
+
+.white
+{
+	color:white;
+}
+#sForm
+{
+	height:12vh;
+}
+h4
+{
+	display:block;
+	text-align:center;
+	font-size: 3em;
+	font-family: light;
+	color:#d5abbd;
+	line-height: 4vh;
+	vertical-align: bottom;
+	margin-top: 25vh;
+}
+
+section.trending
+{
+	display:block;
+	width:70vw;
+	background-color:white;
+	margin:0px auto;
+}
+.trending > div
+{
+	width:100%;
+	height:80%;
+	background-color: #005d7c;
+	margin-top: 5vh;
+}
+
+.blueIcon
+{
+	background-image:url("../Image/replyBlue.svg");
+}
 
 /* ..................................Create.................................... */
 
@@ -244,7 +384,7 @@ label > div
 	width:10vw;
 	height:10vw;
     background-color: white;
-	background-image:url("../Image/reply.svg");
+	background-image:url("../Image/replyblue.svg");
 	background-size: 100%;
 }
 
@@ -431,64 +571,4 @@ img{
     float: left;
     margin-left: 55%;
     margin-bottom: 4vh;
-}
-
-
-
-
-
-/* ..................................Register.................................. */
-/* ..................................Register.................................. */
-
-.mid
-{
-	height:50% !important;
-	margin-left:25%;
-	background-color: #005d7c;
-
-}
-
-
-
-.blue
-{
-	color:#005d7c;
-}
-
-
-
-.white
-{
-	color:white;
-}
-#sForm
-{
-	height:12vh;
-}
-h4
-{
-	display:block;
-	text-align:center;
-	font-size: 3em;
-	font-family: light;
-	color:#d5abbd;
-	line-height: 4vh;
-	vertical-align: bottom;
-	margin-top: 25vh;
-
-}
-
-section.trending
-{
-	display:block;
-	width:70vw;
-	background-color:white;
-	margin:0px auto;
-}
-.trending > div
-{
-	width:100%;
-	height:80%;
-	background-color: #005d7c;
-	margin-top: 5vh;
 }
